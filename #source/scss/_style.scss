@@ -1558,6 +1558,7 @@
         text-align: left;
         cursor: pointer;
         position: relative;
+        white-space: nowrap;
 
         &::after {
           content: "⬍";
@@ -1571,7 +1572,7 @@
 
     tbody {
       tr:nth-child(even) {
-        background-color: #f7fbfd;
+        background: #f4f7f9;
       }
 
       td {
