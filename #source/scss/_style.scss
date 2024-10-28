@@ -1552,20 +1552,26 @@
 
     thead {
       th {
-        padding: 15px;
+        padding: 8px;
+        padding-left: 24px;
         background-color: #f5f9fc;
         font-weight: 600;
         text-align: left;
         cursor: pointer;
         position: relative;
         white-space: nowrap;
-
-        &::after {
-          content: "⬍";
-          font-size: 12px;
-          color: #999;
+        svg {
           position: absolute;
-          right: 10px;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        &.active {
+          svg {
+            path {
+              fill: var(--accent-color);
+            }
+          }
         }
       }
     }
@@ -1576,7 +1582,7 @@
       }
 
       td {
-        padding: 15px;
+        padding: 8px;
         font-size: 14px;
 
         .download-link {
