@@ -1524,9 +1524,20 @@
     img {
       margin-top: 3px;
     }
+    @media screen and (max-width: 768px) {
+      font-size: 13px;
+    }
   }
 
   .icon {
+    img {
+      width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+      min-width: 100px;
+      width: 100px;
+      margin-bottom: auto;
+    }
   }
   .table-container {
     width: 100%;
