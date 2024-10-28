@@ -1554,6 +1554,9 @@
       th {
         padding: 8px;
         padding-left: 24px;
+        &:last-child {
+          padding: 8px;
+        }
         background-color: #f5f9fc;
         font-weight: 600;
         text-align: left;

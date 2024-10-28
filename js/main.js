@@ -40,8 +40,8 @@ function sortTable(table, columnIndex) {
 
 $(document).ready(function () {
   $(".sortable-table th").on("click", function () {
-    $(this).toggleClass("active");
     $(".sortable-table th").removeClass("active");
+    $(this).addClass("active");
     const table = $(this).closest("table");
     const columnIndex = $(this).index();
     sortTable(table, columnIndex);
