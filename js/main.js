@@ -49,12 +49,14 @@ $(document).ready(function () {
 });
 
 $(".allCharts_item .head").click(function () {
+  const item = $(this).closest(".allCharts_item");
+  const isOpen = item.find(".sortable-table").hasClass("open");
   $(".allCharts_item .sortable-table").removeClass("open");
   $(".allCharts_item .head").removeClass("active");
-
-  const item = $(this).closest(".allCharts_item");
-  item.find(".sortable-table").toggleClass("open");
-  $(this).toggleClass("active");
+  if (!isOpen) {
+    item.find(".sortable-table").addClass("open");
+    $(this).addClass("active");
+  }
 });
 
 //-----------------------SLIDERS-----------------------//
