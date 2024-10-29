@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crane</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="left">
+          <a href="index.html" class="header-logo"><img src="./img/header-logo.svg" alt="" /></a>
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <p class="nav-link">
+                  Crane Rental
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                    <path d="M3.5 5.75L7 9.25L10.5 5.75" stroke="#1F2937" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </p>
+                <div class="sub-menu">
+                  <a href="" class="sub-link">Crane Rental</a>
+                  <a href="" class="sub-link">Rigging & Machinery Moving</a>
+                  <a href="" class="sub-link">Steel Erection</a>
+                  <a href="" class="sub-link">Steel Fabrication</a>
+                  <a href="" class="sub-link">Warehousing</a>
+                  <a href="" class="sub-link">Heavy Haul Transport</a>
+                  <a href="" class="sub-link">Traffic Control & Permits</a>
+                  <a href="" class="sub-link">Engineering</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="craneCharts.html" class="nav-link">Crane Charts</a>
+              </li>
+              <li class="nav-item">
+                <a href="aboutUs.html" class="nav-link">About us</a>
+              </li>
+              <li class="nav-item">
+                <a href="projects.html" class="nav-link">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <div class="mobile-bottom">
+              <a href="tel:7739008911" class="btn grey">(773) 900-8911</a>
+              <a href="#" class="btn">Get a free estimate </a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="right">
+          <a href="tel:7739008911" class="header-tel">(773) 900-8911</a>
+          <a href="#" class="btn">Get a free estimate</a>
+          <div class="burger-menu">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="pageHero">
+      <div class="left">
+        <h1 class="hero-title">This is your <span>company page</span></h1>
+        <p class="text_22">A short advertising sentence will be here. A short advertising sentence will be here</p>
+        <p class="hero-advantages text_14">Flexible Scheduling | No Minimums | Pay After</p>
+        <div class="buttons">
+          <a href="" class="btn">Book Crane</a>
+          <a href="tel:7739008911" class="btn grey">(773) 900-8911</a>
+        </div>
+      </div>
+      <div class="right" style="background-image: url(./img/pageHero.jpg)"></div>
+    </section>
+    <section class="allCharts">
+      <div class="container">
+        <div class="allCharts_list">
+          <div class="allCharts_item">
+            <div class="head">
+              <p class="name">All-Terrain Cranes</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7064 15.707C12.5188 15.8944 12.2645 15.9998 11.9994 15.9998C11.7342 15.9998 11.4799 15.8944 11.2924 15.707L5.63537 10.05C5.53986 9.95773 5.46367 9.84739 5.41126 9.72538C5.35886 9.60338 5.33127 9.47216 5.33012 9.33938C5.32896 9.2066 5.35426 9.07492 5.40454 8.95202C5.45483 8.82913 5.52908 8.71747 5.62297 8.62358C5.71686 8.52969 5.82852 8.45544 5.95141 8.40515C6.07431 8.35487 6.20599 8.32957 6.33877 8.33073C6.47155 8.33188 6.60277 8.35947 6.72477 8.41188C6.84677 8.46428 6.95712 8.54047 7.04937 8.63598L11.9994 13.586L16.9494 8.63598C17.138 8.45382 17.3906 8.35302 17.6528 8.3553C17.915 8.35758 18.1658 8.46275 18.3512 8.64816C18.5366 8.83357 18.6418 9.08438 18.644 9.34658C18.6463 9.60877 18.5455 9.86137 18.3634 10.05L12.7064 15.707Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <table class="sortable-table">
+              <thead>
+                <tr>
+                  <th class="sortable" onclick="sortTable(0)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M13.75 9.25H6.25L10 4.25L13.75 9.25ZM6.25 11.75H13.75L10 16.75L6.25 11.75Z" fill="#1C1E1F" /></svg
+                    >Make & Model
+                  </th>
+
+                  <th class="sortable" onclick="sortTable(3)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M13.75 9.25H6.25L10 4.25L13.75 9.25ZM6.25 11.75H13.75L10 16.75L6.25 11.75Z" fill="#1C1E1F" /></svg
+                    >Max cap
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><a href="#">Liebherr</a></td>
+                  <td>55</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Aiebherr</a></td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Liebherr</a></td>
+                  <td>50</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="allCharts_item">
+            <div class="head">
+              <p class="name">All-Terrain Cranes</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7064 15.707C12.5188 15.8944 12.2645 15.9998 11.9994 15.9998C11.7342 15.9998 11.4799 15.8944 11.2924 15.707L5.63537 10.05C5.53986 9.95773 5.46367 9.84739 5.41126 9.72538C5.35886 9.60338 5.33127 9.47216 5.33012 9.33938C5.32896 9.2066 5.35426 9.07492 5.40454 8.95202C5.45483 8.82913 5.52908 8.71747 5.62297 8.62358C5.71686 8.52969 5.82852 8.45544 5.95141 8.40515C6.07431 8.35487 6.20599 8.32957 6.33877 8.33073C6.47155 8.33188 6.60277 8.35947 6.72477 8.41188C6.84677 8.46428 6.95712 8.54047 7.04937 8.63598L11.9994 13.586L16.9494 8.63598C17.138 8.45382 17.3906 8.35302 17.6528 8.3553C17.915 8.35758 18.1658 8.46275 18.3512 8.64816C18.5366 8.83357 18.6418 9.08438 18.644 9.34658C18.6463 9.60877 18.5455 9.86137 18.3634 10.05L12.7064 15.707Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <table class="sortable-table">
+              <thead>
+                <tr>
+                  <th class="sortable" onclick="sortTable(0)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M13.75 9.25H6.25L10 4.25L13.75 9.25ZM6.25 11.75H13.75L10 16.75L6.25 11.75Z" fill="#1C1E1F" /></svg
+                    >Make & Model
+                  </th>
+
+                  <th class="sortable" onclick="sortTable(3)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M13.75 9.25H6.25L10 4.25L13.75 9.25ZM6.25 11.75H13.75L10 16.75L6.25 11.75Z" fill="#1C1E1F" /></svg
+                    >Max cap
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><a href="#">Liebherr</a></td>
+                  <td>55</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Aiebherr</a></td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Liebherr</a></td>
+                  <td>50</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="allCharts_item">
+            <div class="head">
+              <p class="name">All-Terrain Cranes</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7064 15.707C12.5188 15.8944 12.2645 15.9998 11.9994 15.9998C11.7342 15.9998 11.4799 15.8944 11.2924 15.707L5.63537 10.05C5.53986 9.95773 5.46367 9.84739 5.41126 9.72538C5.35886 9.60338 5.33127 9.47216 5.33012 9.33938C5.32896 9.2066 5.35426 9.07492 5.40454 8.95202C5.45483 8.82913 5.52908 8.71747 5.62297 8.62358C5.71686 8.52969 5.82852 8.45544 5.95141 8.40515C6.07431 8.35487 6.20599 8.32957 6.33877 8.33073C6.47155 8.33188 6.60277 8.35947 6.72477 8.41188C6.84677 8.46428 6.95712 8.54047 7.04937 8.63598L11.9994 13.586L16.9494 8.63598C17.138 8.45382 17.3906 8.35302 17.6528 8.3553C17.915 8.35758 18.1658 8.46275 18.3512 8.64816C18.5366 8.83357 18.6418 9.08438 18.644 9.34658C18.6463 9.60877 18.5455 9.86137 18.3634 10.05L12.7064 15.707Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <table class="sortable-table">
+              <thead>
+                <tr>
+                  <th class="sortable" onclick="sortTable(0)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M13.75 9.25H6.25L10 4.25L13.75 9.25ZM6.25 11.75H13.75L10 16.75L6.25 11.75Z" fill="#1C1E1F" /></svg
+                    >Make & Model
+                  </th>
+
+                  <th class="sortable" onclick="sortTable(3)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M13.75 9.25H6.25L10 4.25L13.75 9.25ZM6.25 11.75H13.75L10 16.75L6.25 11.75Z" fill="#1C1E1F" /></svg
+                    >Max cap
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><a href="#">Liebherr</a></td>
+                  <td>55</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Aiebherr</a></td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Liebherr</a></td>
+                  <td>50</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="allCharts_item">
+            <div class="head">
+              <p class="name">All-Terrain Cranes</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7064 15.707C12.5188 15.8944 12.2645 15.9998 11.9994 15.9998C11.7342 15.9998 11.4799 15.8944 11.2924 15.707L5.63537 10.05C5.53986 9.95773 5.46367 9.84739 5.41126 9.72538C5.35886 9.60338 5.33127 9.47216 5.33012 9.33938C5.32896 9.2066 5.35426 9.07492 5.40454 8.95202C5.45483 8.82913 5.52908 8.71747 5.62297 8.62358C5.71686 8.52969 5.82852 8.45544 5.95141 8.40515C6.07431 8.35487 6.20599 8.32957 6.33877 8.33073C6.47155 8.33188 6.60277 8.35947 6.72477 8.41188C6.84677 8.46428 6.95712 8.54047 7.04937 8.63598L11.9994 13.586L16.9494 8.63598C17.138 8.45382 17.3906 8.35302 17.6528 8.3553C17.915 8.35758 18.1658 8.46275 18.3512 8.64816C18.5366 8.83357 18.6418 9.08438 18.644 9.34658C18.6463 9.60877 18.5455 9.86137 18.3634 10.05L12.7064 15.707Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <table class="sortable-table">
+              <thead>
+                <tr>
+                  <th class="sortable" onclick="sortTable(0)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M13.75 9.25H6.25L10 4.25L13.75 9.25ZM6.25 11.75H13.75L10 16.75L6.25 11.75Z" fill="#1C1E1F" /></svg
+                    >Make & Model
+                  </th>
+
+                  <th class="sortable" onclick="sortTable(3)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M13.75 9.25H6.25L10 4.25L13.75 9.25ZM6.25 11.75H13.75L10 16.75L6.25 11.75Z" fill="#1C1E1F" /></svg
+                    >Max cap
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Liebherr</td>
+                  <td>55</td>
+                </tr>
+                <tr>
+                  <td>A & Model</td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <td>Make & Model</td>
+                  <td>50</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="allCharts_item">
+            <div class="head">
+              <p class="name">All-Terrain Cranes</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7064 15.707C12.5188 15.8944 12.2645 15.9998 11.9994 15.9998C11.7342 15.9998 11.4799 15.8944 11.2924 15.707L5.63537 10.05C5.53986 9.95773 5.46367 9.84739 5.41126 9.72538C5.35886 9.60338 5.33127 9.47216 5.33012 9.33938C5.32896 9.2066 5.35426 9.07492 5.40454 8.95202C5.45483 8.82913 5.52908 8.71747 5.62297 8.62358C5.71686 8.52969 5.82852 8.45544 5.95141 8.40515C6.07431 8.35487 6.20599 8.32957 6.33877 8.33073C6.47155 8.33188 6.60277 8.35947 6.72477 8.41188C6.84677 8.46428 6.95712 8.54047 7.04937 8.63598L11.9994 13.586L16.9494 8.63598C17.138 8.45382 17.3906 8.35302 17.6528 8.3553C17.915 8.35758 18.1658 8.46275 18.3512 8.64816C18.5366 8.83357 18.6418 9.08438 18.644 9.34658C18.6463 9.60877 18.5455 9.86137 18.3634 10.05L12.7064 15.707Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <table class="sortable-table">
+              <thead>
+                <tr>
+                  <th class="sortable" onclick="sortTable(0)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M13.75 9.25H6.25L10 4.25L13.75 9.25ZM6.25 11.75H13.75L10 16.75L6.25 11.75Z" fill="#1C1E1F" /></svg
+                    >Make & Model
+                  </th>
+
+                  <th class="sortable" onclick="sortTable(3)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M13.75 9.25H6.25L10 4.25L13.75 9.25ZM6.25 11.75H13.75L10 16.75L6.25 11.75Z" fill="#1C1E1F" /></svg
+                    >Max cap
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><a href="#">Liebherr</a></td>
+                  <td>55</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Aiebherr</a></td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Liebherr</a></td>
+                  <td>50</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="allCharts_item">
+            <div class="head">
+              <p class="name">All-Terrain Cranes</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7064 15.707C12.5188 15.8944 12.2645 15.9998 11.9994 15.9998C11.7342 15.9998 11.4799 15.8944 11.2924 15.707L5.63537 10.05C5.53986 9.95773 5.46367 9.84739 5.41126 9.72538C5.35886 9.60338 5.33127 9.47216 5.33012 9.33938C5.32896 9.2066 5.35426 9.07492 5.40454 8.95202C5.45483 8.82913 5.52908 8.71747 5.62297 8.62358C5.71686 8.52969 5.82852 8.45544 5.95141 8.40515C6.07431 8.35487 6.20599 8.32957 6.33877 8.33073C6.47155 8.33188 6.60277 8.35947 6.72477 8.41188C6.84677 8.46428 6.95712 8.54047 7.04937 8.63598L11.9994 13.586L16.9494 8.63598C17.138 8.45382 17.3906 8.35302 17.6528 8.3553C17.915 8.35758 18.1658 8.46275 18.3512 8.64816C18.5366 8.83357 18.6418 9.08438 18.644 9.34658C18.6463 9.60877 18.5455 9.86137 18.3634 10.05L12.7064 15.707Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <table class="sortable-table">
+              <thead>
+                <tr>
+                  <th class="sortable" onclick="sortTable(0)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M13.75 9.25H6.25L10 4.25L13.75 9.25ZM6.25 11.75H13.75L10 16.75L6.25 11.75Z" fill="#1C1E1F" /></svg
+                    >Make & Model
+                  </th>
+
+                  <th class="sortable" onclick="sortTable(3)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M13.75 9.25H6.25L10 4.25L13.75 9.25ZM6.25 11.75H13.75L10 16.75L6.25 11.75Z" fill="#1C1E1F" /></svg
+                    >Max cap
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Liebherr</td>
+                  <td>55</td>
+                </tr>
+                <tr>
+                  <td>A & Model</td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <td>Make & Model</td>
+                  <td>50</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="allCharts_item">
+            <div class="head">
+              <p class="name">All-Terrain Cranes</p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7064 15.707C12.5188 15.8944 12.2645 15.9998 11.9994 15.9998C11.7342 15.9998 11.4799 15.8944 11.2924 15.707L5.63537 10.05C5.53986 9.95773 5.46367 9.84739 5.41126 9.72538C5.35886 9.60338 5.33127 9.47216 5.33012 9.33938C5.32896 9.2066 5.35426 9.07492 5.40454 8.95202C5.45483 8.82913 5.52908 8.71747 5.62297 8.62358C5.71686 8.52969 5.82852 8.45544 5.95141 8.40515C6.07431 8.35487 6.20599 8.32957 6.33877 8.33073C6.47155 8.33188 6.60277 8.35947 6.72477 8.41188C6.84677 8.46428 6.95712 8.54047 7.04937 8.63598L11.9994 13.586L16.9494 8.63598C17.138 8.45382 17.3906 8.35302 17.6528 8.3553C17.915 8.35758 18.1658 8.46275 18.3512 8.64816C18.5366 8.83357 18.6418 9.08438 18.644 9.34658C18.6463 9.60877 18.5455 9.86137 18.3634 10.05L12.7064 15.707Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+            <table class="sortable-table">
+              <thead>
+                <tr>
+                  <th class="sortable" onclick="sortTable(0)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M13.75 9.25H6.25L10 4.25L13.75 9.25ZM6.25 11.75H13.75L10 16.75L6.25 11.75Z" fill="#1C1E1F" /></svg
+                    >Make & Model
+                  </th>
+
+                  <th class="sortable" onclick="sortTable(3)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M13.75 9.25H6.25L10 4.25L13.75 9.25ZM6.25 11.75H13.75L10 16.75L6.25 11.75Z" fill="#1C1E1F" /></svg
+                    >Max cap
+                  </th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><a href="#">Liebherr</a></td>
+                  <td>55</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Aiebherr</a></td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <td><a href="#">Liebherr</a></td>
+                  <td>50</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="callToAction" style="background-image: url(./img/crane.jpg)">
+      <div class="container">
+        <div class="card">
+          <h2 class="section-title">Work with us!</h2>
+          <p class="text_24">Crane Rental Cost Per Hour & Crane Rental RCrane Rental Cost Per Hour & Crane Rental Ratesates</p>
+          <div class="buttons">
+            <a href="#" class="btn">Get a free estimate</a>
+            <a href="tel:12345678" class="btn grey">(773) 900-8911</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contactUs">
+      <div class="left">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d23680.92385342897!2d-88.3396725!3d42.1049975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sua!4v1729509609324!5m2!1sen!2sua"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="right">
+        <h2 class="section-title">Leave a request</h2>
+        <form action="" class="contactForm" id="main-form">
+          <div class="row">
+            <div class="input-wrapper">
+              <input type="text" placeholder="Name*" name="name" id="name" required />
+            </div>
+            <div class="input-wrapper">
+              <input type="tel" name="phone" id="tel" class="phoneInput" required placeholder="(xxx) xxx-xxxx*" />
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <input id="email" class="input" autocomplete="off" type="text" placeholder="email@gmail.com*" />
+          </div>
+          <div class="input-wrapper">
+            <div class="custom-select">
+              <input type="hidden" id="customSelect" name="customSelect" />
+              <div class="select-wrapper">
+                <div class="select-selected">Service</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.7071 15.7071C12.5196 15.8946 12.2653 15.9999 12.0001 15.9999C11.7349 15.9999 11.4806 15.8946 11.2931 15.7071L5.6361 10.0501C5.54059 9.95785 5.46441 9.84751 5.412 9.7255C5.35959 9.6035 5.332 9.47228 5.33085 9.3395C5.32969 9.20672 5.355 9.07504 5.40528 8.95215C5.45556 8.82925 5.52981 8.7176 5.6237 8.6237C5.7176 8.52981 5.82925 8.45556 5.95214 8.40528C6.07504 8.355 6.20672 8.32969 6.3395 8.33085C6.47228 8.332 6.6035 8.35959 6.7255 8.412C6.84751 8.46441 6.95785 8.54059 7.0501 8.6361L12.0001 13.5861L16.9501 8.6361C17.1387 8.45394 17.3913 8.35315 17.6535 8.35542C17.9157 8.3577 18.1665 8.46287 18.3519 8.64828C18.5373 8.83369 18.6425 9.0845 18.6448 9.3467C18.6471 9.60889 18.5463 9.8615 18.3641 10.0501L12.7071 15.7071Z"
+                    fill="#999999"
+                  />
+                </svg>
+              </div>
+
+              <div class="select-items select-hide">
+                <div class="select-item" data-value="1">Option 1</div>
+                <div class="select-item" data-value="2">Option 2</div>
+                <div class="select-item" data-value="3">Option 3</div>
+              </div>
+            </div>
+          </div>
+          <div class="input-wrapper">
+            <input type="text" placeholder="Message" />
+          </div>
+          <button class="btn" type="submit">Get a free estimate</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="container">
+          <div class="col">
+            <div class="soc-list">
+              <a href=""><img src="./img/instagram.svg" alt="" /></a>
+              <a href=""><img src="./img/facebook.svg" alt="" /></a>
+              <a href=""><img src="./img/tiktok.svg" alt="" /></a>
+            </div>
+            <div class="about">
+              <div class="title">About us</div>
+              <p class="text_14">
+                G.F. crane service offers crane rentals with union operators & lifting equipment included. we provide upfront quotes when you call
+                directly from the owner. no down payment needed. tell us what you’re lifting, the weight, heights & location. you’ll receive your 1
+                flat quote over the phone.
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row">
+              <p class="title">Sitemap</p>
+              <div class="list">
+                <a href="index.html" class="link">Home</a>
+                <a href="craneCharts.html" class="link">Crane Charts</a>
+                <a href="aboutCrane.html" class="link">About Us</a>
+                <a href="projects.html" class="link">Project</a>
+                <a href="contact.html" class="link">Contacts</a>
+              </div>
+            </div>
+            <div class="row">
+              <p class="title">Services</p>
+              <div class="list">
+                <a href="" class="link">Crane Rental</a>
+                <a href="" class="link">Rigging & Machinery Moving</a>
+                <a href="" class="link">Steel Erection</a>
+                <a href="" class="link">Steel Fabrication</a>
+                <a href="" class="link">Warehousing</a>
+                <a href="" class="link">Heavy Haul Transport</a>
+                <a href="" class="link">Traffic Control & Permits</a>
+                <a href="" class="link">Engineering</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <p class="title">Contacts</p>
+            <div class="contact-list">
+              <a href="tel:7739008911" class="contact-link"><img src="./img/footer_phone.svg" alt="" /> (773)900-8911</a>
+              <a href="mailto:gfcrane@gmail.com" class="contact-link"><img src="./img/footer_mail.svg" alt="" /> gfcrane@gmail.com</a>
+              <a href="#" class="contact-link"><img src="./img/footer_location.svg" alt="" /> 1071 Waveland Ave, Franklin Park IL 60131</a>
+            </div>
+            <a href="tel:7739008911" class="btn">(773) 900-8911</a>
+          </div>
+        </div>
+      </div>
+      <p class="copyRight">©DARTWIX. All rights reserved</p>
+    </footer>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/just-validate.production.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

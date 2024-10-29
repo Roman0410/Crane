@@ -41,11 +41,20 @@ function sortTable(table, columnIndex) {
 $(document).ready(function () {
   $(".sortable-table th").on("click", function () {
     $(".sortable-table th").removeClass("active");
-    $(this).addClass("active");
+    $(this).toggleClass("active");
     const table = $(this).closest("table");
     const columnIndex = $(this).index();
     sortTable(table, columnIndex);
   });
+});
+
+$(".allCharts_item .head").click(function () {
+  $(".allCharts_item .sortable-table").removeClass("open");
+  $(".allCharts_item .head").removeClass("active");
+
+  const item = $(this).closest(".allCharts_item");
+  item.find(".sortable-table").toggleClass("open");
+  $(this).toggleClass("active");
 });
 
 //-----------------------SLIDERS-----------------------//
